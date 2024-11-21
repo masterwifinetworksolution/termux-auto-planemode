@@ -8,7 +8,7 @@ echo "Catatan Koneksi - $(date)" > $log_file
 while true; do
     timestamp=$(date '+%Y-%m-%d %H:%M:%S')
 
-    ping -c 5 quiz.int.vidio.com > /dev/null
+    ping -c 5 ISIKAN.BUG.ANDA > /dev/null
     ping_status=$?
 
     if [ $ping_status -ne 0 ]; then
@@ -32,7 +32,7 @@ while true; do
         sleep 5
     fi
 
-    if ! curl --silent --head http://quiz.int.vidio.com | grep "200 OK" > /dev/null; then
+    if ! curl --silent --head http://ISIKAN.BUG.ANDA | grep "200 OK" > /dev/null; then
         echo "$timestamp - Koneksi data tidak berfungsi. Mengaktifkan mode pesawat..." | tee -a $log_file
         su -c 'settings put global airplane_mode_on 1'
         su -c 'am broadcast -a android.intent.action.AIRPLANE_MODE --ez state true'
