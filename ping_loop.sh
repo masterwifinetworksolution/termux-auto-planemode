@@ -3,7 +3,7 @@
 log_file="/storage/emulated/0/network_log.txt"
 
 # Create or clear the log file
-echo "Catatan Koneksi - $(date)" > $log_file
+echo "Catatan Koneksi Simaster - $(date)" > $log_file
 
 while true; do
     timestamp=$(date '+%Y-%m-%d %H:%M:%S')
