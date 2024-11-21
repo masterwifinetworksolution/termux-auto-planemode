@@ -43,3 +43,7 @@ chmod +x /data/data/com.termux/files/home/autostart.sh
 12. Untuk mengubah ping host, anda bisa masuk ke file `ping_loop.sh` di line 11 dan line 35.
 13. langkah terakhir ini yang kita nantikan yaitu pengujian. Anda bisa reboot hp android anda melalui magisk atau langsung dari tombol hp android anda.
 14. Jika berhasil, maka akan muncul icon termux di notif atas layar android anda dengan tulisan `0 sessions, 1 task`. Namun jika anda gagal, akan ada notifikasi log error di termux anda.
+
+## Fungsi script Termux Auto Planemode
+
+Script termux auto plane mode, tugas yang di jalankan adalah ketika ping tidak ada hasil atau data seluler mati atau tidak ada koneksi data. Maka dengan cepat melakukan mode on off pesawat otomatis.
